@@ -1,0 +1,3 @@
+2023-05-05 13:01:33,090 [restartedMain] INFO  c.a.r.RecommendationSystemApplication - Starting RecommendationSystemApplication using Java 17.0.6 with PID 2155 (/Users/Santanu_Barua/Documents/assignment/recommendation-system/target/classes started by Santanu_Barua in /Users/Santanu_Barua/Documents/assignment/recommendation-system)
+2023-05-05 13:01:33,092 [restartedMain] INFO  c.a.r.RecommendationSystemApplication - The following 1 profile is active: "dev"
+2023-05-05 13:01:33,780 [restartedMain] INFO  c.a.r.RecommendationSystemApplication - Started RecommendationSystemApplication in 0.932 seconds (process running for 1.256)
