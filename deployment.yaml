@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommendation-system
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: recommendation-system
+  template:
+    metadata:
+      labels:
+        app: recommendation-system
+    spec:
+      containers:
+        - name: recommendation-system
+          image: santanubarua/recommendation-system:latest
+          imagePullPolicy: Always # or IfNotPresent
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: prices-volume
+              mountPath: /prices
+      volumes:
+        - name: prices-volume
+          hostPath:
+            path: /Users/Santanu_Barua/Documents/assignment/recommendation-system/prices
